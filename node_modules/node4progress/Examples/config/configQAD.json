@@ -1,0 +1,8 @@
+{
+	"AppserverUrl"      		: "APPSERVERDC://167.3.192.109:22097/as-mfg",
+	"AppserverUserName" 		: "",
+	"AppserverUserPassword" 	: "",
+	"AppserverSessionModel"     : "State-less",
+	"WinstoneSvrPort"           : 8085,
+    "DateFormat"                : "dd/mm"	
+}

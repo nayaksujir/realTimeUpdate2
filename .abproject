@@ -1,0 +1,45 @@
+{
+	"ProjectName": "hello-world",
+	"ProjectGuid": "{57b63999-50b5-418a-a448-6e1bb5f95321}",
+	"projectVersion": 1,
+	"AppIdentifier": "com.telerik.helloworld",
+	"DisplayName": "hello-world",
+	"Author": "",
+	"Description": "hello-world",
+	"BundleVersion": "1.0",
+	"AndroidVersionCode": "1",
+	"iOSDeviceFamily": [
+		"1",
+		"2"
+	],
+	"iOSBackgroundMode": [],
+	"ProjectTypeGuids": "{070BCB52-5A75-4F8C-A973-144AF0EAFCC9}",
+	"FrameworkVersion": "3.7.0",
+	"AndroidPermissions": [
+		"android.permission.INTERNET"
+	],
+	"DeviceOrientations": [
+		"Portrait",
+		"Landscape"
+	],
+	"AndroidHardwareAcceleration": "false",
+	"iOSStatusBarStyle": "Default",
+	"Framework": "Cordova",
+	"WP8TileTitle": "",
+	"WP8Publisher": "",
+	"WP8Capabilities": [
+		"ID_CAP_NETWORKING",
+		"ID_CAP_WEBBROWSERCOMPONENT"
+	],
+	"WP8Requirements": [],
+	"WP8PublisherID": "{9e363ae7-2af4-4626-8d42-2b593287baa0}",
+	"WP8ProductID": "{72fb545e-f3ae-4145-a25f-28ed34dfc925}",
+	"WPSdk": "8.0",
+	"WP8PackageIdentityName": "1234Telerik.com.telerik.helloworld",
+	"WP8WindowsPublisherName": "CN=Telerik",
+	"WP8SupportedResolutions": [
+		"ID_RESOLUTION_WVGA",
+		"ID_RESOLUTION_WXGA",
+		"ID_RESOLUTION_HD720P"
+	]
+}

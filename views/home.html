@@ -1,0 +1,47 @@
+<div data-role="view" data-title="Home" data-layout="main" data-model="APP.models.home" data-show="APP.models.home.initalize">
+  <h1 data-bind="html: title"></h1>
+
+  <div id="example" class="k-content" >
+         <div id="gauge"></div>
+                <input type="button" value="Capacity Chart" onclick="CapacityChart();">  
+
+   </div>
+
+  
+
+</div>
+
+ <script src="../public/bower_components/socket.io-client/socket.io.js"></script>
+
+<script>
+    var dashboard = io('http://127.0.0.1:3000/dashboard');
+
+    dashboard.on('stats-updated', function (update) {
+        CapacityChart();
+//        // Convert to percentages
+//        touch.update((update.touch / update.connections) || 0);
+//        video.update((update.video / update.connections) || 0);
+
+//        var pagesData = [];
+//        for (var url in update.pages) {
+//            pagesData.push({ x: url, y: update.pages[url] });
+//        }
+//        pages.update([{ values: pagesData}]);
+
+//        visitors.push([{ time: Date.now() / 1000, y: update.connections}]);
+
+    });
+
+    var newValue;
+    function CapacityChart() {
+        
+        var gauge = $("#gauge").data("kendoLinearGauge");
+        newValue = newValue + 10;
+        if (isNaN(newValue)) 
+            newValue = 0;
+        gauge.value(newValue);
+        gauge.redraw();
+    }
+</script>
+
+
